@@ -9,4 +9,6 @@ Using [Yelp Data](https://business.yelp.com/data/resources/open-dataset/), we'll
 
 # Progress Log
 
+- Added sample_reviews for testing
+
 
