@@ -1,0 +1,6 @@
+# Ignore raw Yelp dataset files
+data/yelp_academic_*.json
+
+# Python cache
+__pycache__/
+*.pyc
