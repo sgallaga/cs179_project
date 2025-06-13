@@ -1,0 +1,16 @@
+Log of general performance and tweaks made while developing:
+
+- Determing how to define structure for our model:
+    - Initially HillClimbSearch was used paired with a BIC scoring method, but data might be too sparse to define any concrete
+    edges.
+    - Switched to BDeu scoring method, and while edges were defined this time, we decided to manually define a simple structure
+
+- Optimizing the best range to differentiate "bad reviews" from "good reviews"
+    - Initially started with (Good Reviews)[1.0, 2.0, 3.0] - (Bad Reviews)[4.0, 5.0] = delta
+    - Might have to tweak to find more standout results
+
+- Defining initial keywords while combing through data
+    - Current keywords count towards the relevance scores for attributes i.e. "cleanliness_mentioned", but we can always add more words.
+
+- Ablation Study
+    - Look into removing a latent variable i.e. food_mentioned and see how much predictions change
